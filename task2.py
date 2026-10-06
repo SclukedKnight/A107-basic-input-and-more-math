@@ -24,3 +24,13 @@ Your final amount is $39152.94
 You earned $14152.94 interest
 ```
 '''
+P = float(input("Enter the Principle: "))
+i = float(input("Enter the intrest rate (%): "))
+comp = int(input("Enter the number of compounding periods in a year (int): "))
+t = float(input("How many years is the investment: "))
+
+final = round((P * ((1 + (i / comp / 100)) ** (comp * t))), 2)
+
+print(f"Your final expected investment value is {final}$")
+Intrest = round(final - P, 2)
+print(f"You earned {Intrest}$ in intrest")

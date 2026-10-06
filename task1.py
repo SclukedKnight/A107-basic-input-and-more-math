@@ -18,3 +18,12 @@ Enter actual : 14
 The percent difference is 16.67%
 ```
 '''
+
+x = float(input("Input first number: "))
+y = float(input("Input second number: "))
+
+z = -(x - y) / x * 100
+
+z = round(z, 2)
+
+print(f"The difference in percent is {z}%")
